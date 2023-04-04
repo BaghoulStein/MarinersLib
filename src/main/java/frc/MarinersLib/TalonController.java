@@ -111,7 +111,7 @@ public class TalonController extends BaseTalon {
         return getSelectedSensorVelocity() * 10 * m_EncoderTicks2Rotation * m_GearRatio; // getSelectedSensorVelocity
                                                                                          // returns in 100ms values so
                                                                                          // needs to be multiplied to
-                                                                                         // reach second
+                                                                                         // reach second values
     }
 
     /**
@@ -145,7 +145,7 @@ public class TalonController extends BaseTalon {
     }
 
     /**
-     * Creates/Gets a shuffleboard tab specifically for the mtoor
+     * Creates/Gets a shuffleboard tab specifically for the motor
      * where it displays all relavent information about the motors state.
      */
     public void debugMotor() {
