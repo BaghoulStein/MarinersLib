@@ -144,12 +144,18 @@ public class TalonController extends BaseTalon {
         setPosition(m_LockedPosition);
     }
 
+    /**
+     * Creates/Gets a shuffleboard tab specifically for the mtoor
+     * where it displays all relavent information about the motors state.
+     */
     public void debugMotor() {
         ShuffleboardTab tab = Shuffleboard.getTab(String.format("TalonController ID: %d", getDeviceID()));
         tab.addDouble("Motor Position", () -> getRotations()).withWidget(BuiltInWidgets.kGraph);
         tab.addDouble("Motor Velocity", () -> getVelocity()).withWidget(BuiltInWidgets.kGraph);
         tab.addDouble("Motor Error", () -> getClosedLoopError()).withWidget(BuiltInWidgets.kGraph);
         tab.addDouble("Motor Target", () -> getClosedLoopTarget());
+        tab.addBoolean("Motor Locked", () -> m_IsLocked);
+        tab.addDouble("Motor Locked Position", () -> m_LockedPosition);
         tab.add(m_MotorPID);
     }
 
