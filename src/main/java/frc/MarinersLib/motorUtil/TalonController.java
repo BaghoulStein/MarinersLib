@@ -1,4 +1,4 @@
-package frc.MarinersLib;
+package frc.MarinersLib.motorUtil;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;
