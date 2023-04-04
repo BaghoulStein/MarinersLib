@@ -1,4 +1,4 @@
-package frc.MarinersLib;
+package frc.MarinersLib.motorUtil;
 
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.util.sendable.Sendable;
