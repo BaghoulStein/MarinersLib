@@ -1,4 +1,4 @@
-package frc.MarinersLib.humanIO;
+package frc.MarinersLib.ioUtil;
 
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.event.BooleanEvent;
